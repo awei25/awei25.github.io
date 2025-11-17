@@ -1,0 +1,518 @@
+.text {
+  position: relative;
+  width: fit-content;
+  font-family: "IBM Plex Serif", 'Times New Roman', Times, serif;
+  line-height: normal;
+}
+
+.text--mono     { font-family: "IBM Plex Mono", monospace; }
+
+.text--sm       { font-size: 16px; }
+.text--md       { font-size: 18px; }
+.text--lg       { font-size: 24px; }
+.text--xl       { font-size: 72px; }
+
+.text--bold     { font-weight: 700; }
+.text--regular  { font-weight: 400; }
+
+.text--center   { text-align: center; }
+.text--left     { text-align: left; }
+
+.text--white    { color: white; }
+.text--black    { color: black; }
+.text--green    { color: var(--spinach); }
+
+.desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: var(--bean-sprout);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-s) var(--spacing-m);
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--kale);
+}
+
+.header-buttons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  position: relative;
+  flex: 0 0 auto;
+}
+
+/* Hide the checkbox itself */
+.nav-toggle {
+  display: none;
+}
+
+/* Hamburger button (hidden on desktop by default) */
+.nav-toggle-label {
+  display: none; /* will show on tablet/mobile */
+  cursor: pointer;
+  padding: var(--spacing-xs);
+}
+
+/* The three lines of the hamburger */
+.nav-toggle-label span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: white;
+  position: relative;
+  border-radius: 999px;
+  transition: 0.2s ease;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: white;
+  border-radius: 999px;
+  transition: 0.2s ease;
+}
+
+.nav-toggle-label span::before {
+  top: -6px;
+}
+
+.nav-toggle-label span::after {
+  top: 6px;
+}
+
+/* Optional: animate into an "X" when open */
+.nav-toggle:checked + .nav-toggle-label span {
+  background: transparent;
+}
+
+.nav-toggle:checked + .nav-toggle-label span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-toggle:checked + .nav-toggle-label span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-l);
+  padding: var(--spacing-xl) var(--spacing-xxl);
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--kale);
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  bottom: 0;
+  width: 120vw;
+  height: 100vh;
+  background-color: var(--bean-sprout);
+  border-radius: 1000px 1000px 0px 0px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  height: 283px; /* FIX THIS */
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-s) 0px;
+  align-self: stretch;
+  width: 100%;
+}
+
+.iphone-pro {
+  position: relative;
+  width: clamp(230px, 25vw, 400px);            /* you can change this */
+  aspect-ratio: 1129 / 2175;  /* perfect shape */
+  border-radius: 38.32px;
+  overflow: hidden;           /* clips image into rounded shape */
+}
+
+.iphone-pro img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;          /* fills container correctly */
+  display: block;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-m);
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.roots-helps {
+  width: 500px; /* FIX THIS */
+  flex-shrink: 1;
+}
+
+.info-content {
+  display: flex;
+  width: '100%';
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-m);
+  position: relative;
+}
+
+.icon-module {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-s);
+  flex: 1;
+  flex-grow: 1;
+  border-radius: 20px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* FIX THIS */
+  height: 100px;}
+
+.icon {
+  height: 69px;
+  width: 69px;
+  object-fit: contain;
+}
+
+.icon-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+}
+
+.concept-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-m);
+  padding: 0px var(--spacing-m) var(--spacing-l);
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.circle-2 {
+  position: absolute;
+  top: 50%;
+  width: 120vw;
+  height: 100vh;
+  background-color: var(--endive);
+  border-radius: 1000px 1000px 0px 0px;
+}
+
+.video {
+  position: relative;
+  width: 70%;
+  aspect-ratio: 16 / 9;
+}
+
+.design-process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-m);
+  padding: var(--spacing-l) var(--spacing-xl);
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: var(--endive);
+}
+
+.process-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: min-content;
+  gap: var(--spacing-s);
+  left: var(--spacing-xl);
+}
+
+.process-module {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 1 0;
+  align-self: stretch;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--borders);
+}
+
+.process-image {
+  position: relative;
+  width: 100%;
+  align-self: stretch;
+  aspect-ratio: 5 / 3;
+  background-color: #3c3c3c;
+}
+
+.process-module-content {
+  padding: var(--spacing-s);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-s);
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 1 0 0;
+}
+
+.process-module-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-s);
+  position: relative;
+  align-self: stretch;
+  flex: 1 0 0;
+}
+
+.process-module-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--spacing-xs) var(--spacing-s);
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.process-link-button {
+  display: inline-flex;
+  padding: 8px var(--spacing-s);
+  flex: 0 0 auto;
+  background-color: var(--spinach);
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s ease; /* smooth animation */
+}
+
+.process-link-button:hover {
+  background: var(--kale); /* darker */
+  transform: translateY(-2px); /* tiny lift */
+}
+
+.our-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-m);
+  padding: var(--spacing-l) var(--spacing-m);
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.team-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-l);
+  padding: var(--spacing-l) 0px;
+  position: relative;
+}
+
+.profile {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-s);
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.team-ppf {
+  position: relative;
+  width: clamp(118px, 25vw, 218px);
+  height: clamp(118px, 25vw, 218px);
+  border-radius: 50%;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.footer {
+  justify-content: space-between;
+  padding: var(--spacing-s) var(--spacing-m);
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Small laptops */
+@media (max-width: 1024px) {
+  .design-process {
+    padding: var(--spacing-l) var(--spacing-m);
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: var(--endive);
+  }
+
+  .process-module {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;          /* ← don't shrink; size to content */
+  }
+
+  .process-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-content {
+    display: grid;
+    padding: var(--spacing-m) 0;
+    row-gap: var(--spacing-m);
+    column-gap: var(--spacing-m);
+    align-self: stretch;
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .intro {
+    padding: var(--spacing-l) var(--spacing-m);
+  }
+
+  .video {
+    width: 90%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .header {
+    align-items: center;
+  }
+
+  /* Show hamburger button on small screens */
+  .nav-toggle-label {
+    display: block;
+  }
+
+  /* Make header-buttons become a vertical dropdown */
+  .header-buttons {
+    display: none;              /* hidden by default */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--spacing-s);
+    width: 100%;
+    margin-top: var(--spacing-s);
+  }
+
+  /* When checkbox is checked → show menu */
+  .nav-toggle:checked + .nav-toggle-label + .header-buttons {
+    display: flex;
+  }
+  
+  .video {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--spacing-s) var(--spacing-m);
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .info-content {
+    flex-direction: column;
+    gap: var(--spacing-xs)
+  }
+
+  .title {
+    height: auto;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  :root {
+    --spacing-xs: 6px;
+    --spacing-s: 12px;
+    --spacing-m: 24px;
+    --spacing-l: 48px;
+    --spacing-xl: 72px;
+  }
+
+  .text--sm       { font-size: 12px; }
+  .text--md       { font-size: 16px; }
+  .text--lg       { font-size: 18px; }
+  .text--xl       { font-size: 36px; }
+
+  .roots-helps {
+    width: 100%;
+  }
+
+  .video {
+    width: 110%;
+  }
+}

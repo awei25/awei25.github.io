@@ -1,0 +1,23 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Make everything scale and avoid overflow */
+* {
+  box-sizing: border-box;
+}
+
+/* Images scale instead of overflowing */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}

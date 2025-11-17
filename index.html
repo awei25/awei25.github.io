@@ -1,21 +1,448 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Angela Wei Github</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>roots - connecting for us</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <header>
-      
-    </header>
-    <main>
-      
-    </main>
-    <footer>
-      
-    </footer>
+  <body> 
+    <div class="desktop">
+      <header class="header">
+        <!-- logo -->
+        <h1 class="text text--mono text--md text--bold text--white text--left">roots</h1>
+
+        <!-- Hidden checkbox to control menu -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+        <!-- Hamburger button -->
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+          <span></span>
+        </label>
+
+        <nav class="header-buttons" aria-label="Main navigation">
+          <!-- nav links -->
+          <a href="#home" class="text text--mono text--regular text--white">home</a>
+          <a href="#process" class="text text--mono text--regular text--white">process</a>
+          <a href="#about" class="text text--mono text--regular text--white">about</a>
+        </nav>
+      </header>
+
+      <section class="intro" id="home">
+        <div class="circle" aria-hidden="true"></div>
+
+        <div class="title">
+          <h2 class="text text--mono text--xl text--bold text--white text--center">roots</h2>
+          <p class="text text--mono text--lg text--regular text--white text--center">
+            connecting for us
+          </p>
+        </div>
+
+        <div class="iphone-pro">
+          <img src="img/phone.png" alt="Mobile app preview" />
+        </div>
+
+        <div class="info">
+          <p class="text text--lg text--regular text--black text--center roots-helps">
+            roots helps immigrant parents learn effective communication skills with their children, grow those skills,
+            and have fun together.
+          </p>
+
+          <div class="info-content">
+            <article class="icon-module">
+              <div class="icon-container">
+                <img class="icon" src="img/learning.svg" alt="" aria-hidden="true" />
+              </div>
+              <div class="icon-content">
+                <h3 class="text text--mono text--md text--bold text--black text--left">learn</h3>
+                <p class="text text--sm text--regular text--black text--left">
+                  Learn ways to talk that will get your children to listen and open up
+                </p>
+              </div>
+            </article>
+
+            <article class="icon-module">
+              <div class="icon-container">
+                <img class="icon" src="img/challenges.svg" alt="" aria-hidden="true" />
+              </div>
+              <div class="icon-content">
+                <h3 class="text text--mono text--md text--bold text--black text--left">play</h3>
+                <p class="text text--sm text--regular text--black text--left">
+                  Do short, fun challenges to bond with your child
+                </p>
+              </div>
+            </article>
+
+            <article class="icon-module">
+              <div class="icon-container">
+                <img class="icon" src="img/memories.svg" alt="" aria-hidden="true" />
+              </div>
+              <div class="icon-content">
+                <h3 class="text text--mono text--md text--bold text--black text--left">reflect</h3>
+                <p class="text text--sm text--regular text--black text--left">
+                  Reflect on the memories you make with your children
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="concept-video">
+        <div class="circle-2" aria-hidden="true"></div>
+        <h2 class="text text--mono text--lg text--bold text--black text--center">concept video</h2>
+
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/w2OhdEm4oBY?si=87HNXiebUkMXmh_f"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="process" class="design-process">
+        <h2 class="text text--mono text--lg text--bold text--black text--center">the design process</h2>
+
+        <div class="process-content">
+          <!-- A1 -->
+          <article class="process-module">
+            <div class="process-image" role="img" aria-label="A1 Needfinding image placeholder"></div>
+            <div class="process-module-content">
+              <div class="process-module-text">
+                <h3 class="text text--sm text--bold text--black text--center">A1: Needfinding</h3>
+                <p class="text text--sm text--regular text--black text--full">
+                  We interviewed 4 individuals to understand their family dynamics and how their immigrant/non-immigrant
+                  backgrounds shaped their experiences.
+                </p>
+              </div>
+              <div class="process-module-buttons">
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PDF">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (pdf)
+                  </span>
+                </a>
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PowerPoint">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (ppt)
+                  </span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- A2 -->
+          <article class="process-module">
+            <div class="process-image" role="img" aria-label="A1 Needfinding image placeholder"></div>
+            <div class="process-module-content">
+              <div class="process-module-text">
+                <h3 class="text text--sm text--bold text--black text--center">A2: Needfinding</h3>
+                <p class="text text--sm text--regular text--black text--full">
+                  We interviewed 4 individuals to understand their family dynamics and how their immigrant/non-immigrant
+                  backgrounds shaped their experiences.
+                </p>
+              </div>
+              <div class="process-module-buttons">
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PDF">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (pdf)
+                  </span>
+                </a>
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PowerPoint">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (ppt)
+                  </span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- A4 -->
+          <article class="process-module">
+            <div class="process-image" role="img" aria-label="A1 Needfinding image placeholder"></div>
+            <div class="process-module-content">
+              <div class="process-module-text">
+                <h3 class="text text--sm text--bold text--black text--center">A1: Needfinding</h3>
+                <p class="text text--sm text--regular text--black text--full">
+                  We interviewed 4 individuals to understand their family dynamics and how their immigrant/non-immigrant
+                  backgrounds shaped their experiences.
+                </p>
+              </div>
+              <div class="process-module-buttons">
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PDF">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (pdf)
+                  </span>
+                </a>
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PowerPoint">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (ppt)
+                  </span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- A5 -->
+          <article class="process-module">
+            <div class="process-image" role="img" aria-label="A1 Needfinding image placeholder"></div>
+            <div class="process-module-content">
+              <div class="process-module-text">
+                <h3 class="text text--sm text--bold text--black text--center">A1: Needfinding</h3>
+                <p class="text text--sm text--regular text--black text--full">
+                  We interviewed 4 individuals to understand their family dynamics and how their immigrant/non-immigrant
+                  backgrounds shaped their experiences.
+                </p>
+              </div>
+              <div class="process-module-buttons">
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PDF">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (pdf)
+                  </span>
+                </a>
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PowerPoint">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (ppt)
+                  </span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- A6 -->
+          <article class="process-module">
+            <div class="process-image" role="img" aria-label="A1 Needfinding image placeholder"></div>
+            <div class="process-module-content">
+              <div class="process-module-text">
+                <h3 class="text text--sm text--bold text--black text--center">A1: Needfinding</h3>
+                <p class="text text--sm text--regular text--black text--full">
+                  We interviewed 4 individuals to understand their family dynamics and how their immigrant/non-immigrant
+                  backgrounds shaped their experiences.
+                </p>
+              </div>
+              <div class="process-module-buttons">
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PDF">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (pdf)
+                  </span>
+                </a>
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PowerPoint">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (ppt)
+                  </span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- A7 -->
+          <article class="process-module">
+            <div class="process-image" role="img" aria-label="A1 Needfinding image placeholder"></div>
+            <div class="process-module-content">
+              <div class="process-module-text">
+                <h3 class="text text--sm text--bold text--black text--center">A1: Needfinding</h3>
+                <p class="text text--sm text--regular text--black text--full">
+                  We interviewed 4 individuals to understand their family dynamics and how their immigrant/non-immigrant
+                  backgrounds shaped their experiences.
+                </p>
+              </div>
+              <div class="process-module-buttons">
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PDF">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (pdf)
+                  </span>
+                </a>
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PowerPoint">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (ppt)
+                  </span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- A8 -->
+          <article class="process-module">
+            <div class="process-image" role="img" aria-label="A1 Needfinding image placeholder"></div>
+            <div class="process-module-content">
+              <div class="process-module-text">
+                <h3 class="text text--sm text--bold text--black text--center">A1: Needfinding</h3>
+                <p class="text text--sm text--regular text--black text--full">
+                  We interviewed 4 individuals to understand their family dynamics and how their immigrant/non-immigrant
+                  backgrounds shaped their experiences.
+                </p>
+              </div>
+              <div class="process-module-buttons">
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PDF">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (pdf)
+                  </span>
+                </a>
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PowerPoint">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (ppt)
+                  </span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- A9 -->
+          <article class="process-module">
+            <div class="process-image" role="img" aria-label="A1 Needfinding image placeholder"></div>
+            <div class="process-module-content">
+              <div class="process-module-text">
+                <h3 class="text text--sm text--bold text--black text--center">A1: Needfinding</h3>
+                <p class="text text--sm text--regular text--black text--full">
+                  We interviewed 4 individuals to understand their family dynamics and how their immigrant/non-immigrant
+                  backgrounds shaped their experiences.
+                </p>
+              </div>
+              <div class="process-module-buttons">
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PDF">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (pdf)
+                  </span>
+                </a>
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PowerPoint">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (ppt)
+                  </span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- A10 -->
+          <article class="process-module">
+            <div class="process-image" role="img" aria-label="A1 Needfinding image placeholder"></div>
+            <div class="process-module-content">
+              <div class="process-module-text">
+                <h3 class="text text--sm text--bold text--black text--center">A1: Needfinding</h3>
+                <p class="text text--sm text--regular text--black text--full">
+                  We interviewed 4 individuals to understand their family dynamics and how their immigrant/non-immigrant
+                  backgrounds shaped their experiences.
+                </p>
+              </div>
+              <div class="process-module-buttons">
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PDF">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (pdf)
+                  </span>
+                </a>
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PowerPoint">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (ppt)
+                  </span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- A11 -->
+          <article class="process-module">
+            <div class="process-image" role="img" aria-label="A1 Needfinding image placeholder"></div>
+            <div class="process-module-content">
+              <div class="process-module-text">
+                <h3 class="text text--sm text--bold text--black text--center">A1: Needfinding</h3>
+                <p class="text text--sm text--regular text--black text--full">
+                  We interviewed 4 individuals to understand their family dynamics and how their immigrant/non-immigrant
+                  backgrounds shaped their experiences.
+                </p>
+              </div>
+              <div class="process-module-buttons">
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PDF">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (pdf)
+                  </span>
+                </a>
+                <a href="#" class="process-link-button" aria-label="Download A1 slides as PowerPoint">
+                  <span class="text text--mono text--sm text--regular text--white text--center">
+                    slides (ppt)
+                  </span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="our-team">
+        <h2 class="text text--mono text--lg text--bold text--black text--center">our team</h2>
+
+        <div class="team-content">
+          <article class="profile">
+            <img class="team-ppf" role="img" src="img/angela_ppf.png" aria-label="Photo of Angela W." />
+            <div class="profile-text">
+              <h3 class="text text--sm text--regular text--black text--center text--full">Angela W.</h3>
+              <p class="text text--sm text--regular text--black text--center text--full">Co-term</p>
+              <p class="text text--sm text--regular text--black text--center text--full">
+                BA English, MS CS (HCI)
+              </p>
+              <p class="text text--sm text--regular text--black text--center text--full">
+                Palo Alto, CA
+              </p>
+            </div>
+          </article>
+
+          <article class="profile">
+            <img class="team-ppf" role="img" src="img/angela_ppf.png" aria-label="Photo of Angela W." />
+            <div class="profile-text">
+              <h3 class="text text--sm text--regular text--black text--center text--full">Angela W.</h3>
+              <p class="text text--sm text--regular text--black text--center text--full">Co-term</p>
+              <p class="text text--sm text--regular text--black text--center text--full">
+                BA English, MS CS (HCI)
+              </p>
+              <p class="text text--sm text--regular text--black text--center text--full">
+                Palo Alto, CA
+              </p>
+            </div>
+          </article>
+
+          <article class="profile">
+            <img class="team-ppf" role="img" src="img/angela_ppf.png" aria-label="Photo of Angela W." />
+            <div class="profile-text">
+              <h3 class="text text--sm text--regular text--black text--center text--full">Angela W.</h3>
+              <p class="text text--sm text--regular text--black text--center text--full">Co-term</p>
+              <p class="text text--sm text--regular text--black text--center text--full">
+                BA English, MS CS (HCI)
+              </p>
+              <p class="text text--sm text--regular text--black text--center text--full">
+                Palo Alto, CA
+              </p>
+            </div>
+          </article>
+
+          <article class="profile">
+            <img class="team-ppf" role="img" src="img/angela_ppf.png" aria-label="Photo of Angela W." />
+            <div class="profile-text">
+              <h3 class="text text--sm text--regular text--black text--center text--full">Angela W.</h3>
+              <p class="text text--sm text--regular text--black text--center text--full">Co-term</p>
+              <p class="text text--sm text--regular text--black text--center text--full">
+                BA English, MS CS (HCI)
+              </p>
+              <p class="text text--sm text--regular text--black text--center text--full">
+                Palo Alto, CA
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="text text--mono text--sm text--regular text--black text--center footer-text">
+          @ roots 2025
+        </p>
+        <p class="text text--mono text--sm text--regular text--black text--center footer-text">
+          CS 147 fall 2025 - introduction to human computer interaction
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

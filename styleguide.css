@@ -1,0 +1,19 @@
+:root {
+  --bean-sprout: rgba(248, 247, 243, 1);
+  --icons: rgba(67, 67, 67, 1);
+  --radichio: rgba(195, 82, 48, 1);
+  --turmeric: rgba(251, 149, 0, 1);
+  --butter-yellow: rgba(255, 238, 178, 1);
+  --endive: rgba(182, 189, 119, 1);
+  --spinach: rgba(101, 113, 3, 1);
+  --kale: rgba(41, 61, 34, 1);
+  --dark-green: rgba(0, 62, 55, 1);
+  --borders: rgba(67, 67, 67, 0.5);
+  --black: rgba(0, 0, 0, 1);
+  --spacing-xs: 12px;
+  --spacing-s: 24px;
+  --spacing-m: 48px;
+  --spacing-l: 72px;
+  --spacing-xl: 128px;
+  --spacing-xxl: 180px;
+}
